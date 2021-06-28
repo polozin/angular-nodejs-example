@@ -1,0 +1,60 @@
+{
+  "tables": [
+    {
+      "title": "simple table  1",
+      "rows": 5,
+      "columns": 2,
+      "notes": "analytics data 1"
+    },
+    {
+      "title": "simple table 2",
+      "rows": 7,
+      "columns": 8 ,
+      "notes": "analytics data 2"
+    },
+    {
+      "title": "simple table 3",
+      "rows": 10,
+      "columns": 5,
+      "notes": "analytics data 3"
+    },
+    {
+      "title": "simple table 3",
+      "rows": 10,
+      "columns": 5,
+      "notes": "analytics data 3"
+    },
+    {
+      "title": "simple table 3",
+      "rows": 10,
+      "columns": 5,
+      "notes": "analytics data 3"
+    },
+    {
+      "title": "simple table 4",
+      "rows": 10,
+      "columns": 5,
+      "notes": "analytics data 4"
+    },
+    {
+      "title": "simple table 5",
+      "rows": 10,
+      "columns": 5,
+      "notes": "analytics data 5"
+    }
+  ,
+    {
+      "title": "simple table 6",
+      "rows": 10,
+      "columns": 5,
+      "notes": "analytics data 6"
+    }
+  ,
+    {
+      "title": "simple table 7",
+      "rows": 10,
+      "columns": 5,
+      "notes": "analytics data 7"
+    }
+  ]
+}

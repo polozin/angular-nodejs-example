@@ -1,0 +1,32 @@
+<app-header></app-header>
+<div class="container">
+
+    <div *ngIf="state == States.Files">
+        <h4>Files</h4>
+        <div class="content">
+            <div *ngFor="let file of files" class="card" (click)="getTables(file.name)" >
+                {{file.name}}
+            </div>
+        </div>
+    </div>
+    <div *ngIf="state == States.Tables">
+      <h4>Tables in file &#34;{{fileName}}&#34;. <span class="pslink" (click)="toState(States.Files)">Back to files</span></h4>
+        <div class="content">
+            <div *ngFor="let table of tables" class="card" (click)="showContent(table)">
+                {{table.title}}
+            </div>
+        </div>
+    </div>
+    <div *ngIf="state == States.Content">
+        <h4>Content of table &#34;{{currentTable.title}}&#34;. <span class="pslink" (click)="toState(States.Tables)">Back to Tables</span>, <span class="pslink" (click)="toState(States.Files)">Back to files</span></h4>
+        <div class="content">
+           <div class="card card-content" (click)="toState(States.Tables)">
+               <div>title: {{currentTable.title}}</div>
+               <div>rows: {{currentTable.rows}}</div>
+               <div>columns: {{currentTable.columns}}</div>
+               <div>notes: {{currentTable.notes}}</div>
+           </div>
+        </div>
+    </div>
+</div>
+
